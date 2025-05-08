@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberwizD | Application Exploit Development</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=JetBrains+Mono:wght@400;500;700&display=swap">
+</head>
+<body>
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">Cyberwiz<span>D</span></a>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="#whoami">$ whoami</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#terminal">Terminal</a></li>
+                    <li><a href="#progress">Progress</a></li>
+                    <li><a href="#resources">Hub</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    
+    <nav class="mobile-nav">
+        <ul>
+            <li><a href="#whoami">$ whoami</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#terminal">Terminal</a></li>
+            <li><a href="#progress">Progress</a></li>
+            <li><a href="#resources">Hub</a></li>
+        </ul>
+    </nav>
+    
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-subtitle fade-in">Hi, my name is</div>
+                <h1 class="hero-title fade-in delay-1">CyberwizD<span class="highlight">.</span></h1>
+                
+                <div class="hero-row">
+                    <div class="hero-image fade-in delay-2">
+                        <img src="https://images.unsplash.com/photo-1563089145-599997674d42?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Security Expert">
+                    </div>
+                    
+                    <div class="hero-text-container fade-in delay-3">
+                        <div class="tagline typing-text">Where Code Meets Exploits — Reversing, Breaking, Building.</div>
+                        <p class="hero-description">I specialize in Application Security and Secure Software Engineering. Building tools, crafting exploits, and understanding systems at their lowest level.</p>
+                        <a href="#skills" class="btn primary-btn">Explore My Skillset <span class="btn-arrow">→</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-bg-pattern"></div>
+    </section>
+    
+    <section id="whoami" class="matrix-bg">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title slide-in-left"><span class="prompt">$</span> whoami</h2>
+                <div class="section-line slide-in-right"></div>
+            </div>
+            
+            <!-- <div class="grid fade-in">
+                <div class="card">
+                    <h3 class="card-title">The Path I Follow</h3>
+                    <p>I'm a dedicated security specialist focused on understanding how applications work at their core and finding innovative ways to break and secure them. My journey began with a deep fascination for reverse engineering and has evolved into comprehensive expertise in application security.</p>
+                    <p>By day, I work as an application security engineer. By night, I develop custom security tools and research new exploitation techniques to stay ahead of the curve.</p>
+                    <p>With a background in Computer Engineering and specialized training in low-level systems programming, I bring a unique perspective that combines deep technical knowledge with practical security insights.</p>
+                </div>
+                
+                <div class="card">
+                    <h3 class="card-title">My Security Philosophy</h3>
+                    <p>I believe that true security comes from understanding both sides of the equation. To build secure systems, you must think like an attacker. To find vulnerabilities effectively, you must understand how developers build software.</p>
+                    <p>This dual perspective allows me to bridge the gap between security findings and practical fixes, creating solutions that are both secure and implementable in real-world environments.</p>
+                    <p>I'm passionate about sharing knowledge and contributing to the security community through open-source tools, research, and mentoring others on their journey.</p>
+                </div>
+            </div> -->
+            
+            <div class="card terminal-card fade-in delay-2">
+                <h3 class="card-title">The Discovery</h3>
+                <p>After analyzing my background in computer engineering and cybersecurity (particularly application security and software development), 
+                    my work on projects like CyberSpace (Web Vulnerability Scanner), and my experience with tools such as Metasploit, OWASP ZAP, Nessus, Firebase, and Flet, I've identified my unique specialization:
+                </p>
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <div class="terminal-dot red"></div>
+                            <div class="terminal-dot yellow"></div>
+                            <div class="terminal-dot green"></div>
+                        </div>
+                        <div class="terminal-title">cyberwizd@kali:~/identity</div>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="terminal-line">
+                            <span class="terminal-prompt">$</span>
+                            <span class="terminal-command">cat profile.json | jq</span>
+                        </div>
+                        <div class="terminal-output typewriter">
+                            {<br>
+                            &nbsp;&nbsp;"name": "CyberwizD",<br>
+                            &nbsp;&nbsp;"title": "Application Security Specialist & Software Developer",<br>
+                            &nbsp;&nbsp;"background": "Computer Engineering & Cybersecurity",<br>
+                            &nbsp;&nbsp;"skills": {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;"languages": ["Python", "GoLang", "C"],<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;"security": ["API Security", "Penetration Testing", "Malware Research"]<br>
+                            &nbsp;&nbsp;}<br>
+                            }
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="specialization-display">
+                    <h3 class="card-title">Core Specializations</h3>
+                    <div class="specialization-bubbles">
+                        <div class="specialization-bubble">Building Software Applications</div>
+                        <div class="specialization-bubble">Secure API Development</div>
+                        <div class="specialization-bubble">CVEs Analysis & Research</div>
+                        <div class="specialization-bubble">Secure-by-Design Development</div>
+                        <div class="specialization-bubble">Software Auditing</div>
+                        <div class="specialization-bubble">Vulnerability Research</div>
+                        <div class="specialization-bubble">Penetration Testing</div>
+                        <div class="specialization-bubble">SAST/DAST</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title slide-in-left"><span class="prompt">$</span> ./display_skills.sh</h2>
+                <div class="section-line slide-in-right"></div>
+            </div>
+            
+            <div class="skills-container">
+                <div class="skills-category fade-in">
+                    <div class="skills-category-header">
+                        <div class="skills-category-icon">🔓</div>
+                        <h3 class="skills-category-title">Offensive Security</h3>
+                    </div>
+                    
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">💣</div>
+                            <div class="skill-name">Binary Exploitation</div>
+                            <div class="skill-level">
+                                <div class="skill-level-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-icon">🔍</div>
+                            <div class="skill-name">Reverse Engineering</div>
+                            <div class="skill-level">
+                                <div class="skill-level-bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-icon">🧨</div>
+                            <div class="skill-name">Fuzzing</div>
+                            <div class="skill-level">
+                                <div class="skill-level-bar" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-icon">🕸️</div>
+                            <div class="skill-name">Web Application Security</div>
+                            <div class="skill-level">
+                                <div class="skill-level-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-icon">📝</div>
+                            <div class="skill-name">Exploit Writing</div>
+                            <div class="skill-level">
+                                <div class="skill-level-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-icon">🚨</div>
+                            <div class="skill-name">Red Teaming</div>
+                            <div class="skill-level">
+                                <div class="skill-level-bar" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-category fade-in delay-1">
+                    <div class="skills-category-header">
+                        <div class="skills-category-icon">💻</div>
+                        <h3 class="skills-category-title">Development</h3>
+                    </div>
+                    
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">🐍</div>
+                            <div class="skill-name">Python</div>
+                            <div class="skill-level">
+                                <div class="skill-level-bar" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-icon">⚙️</div>
+                            <div class="skill-name">C</div>
+                            <div class="skill-level">
+                                <div class="skill-level-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-icon">☁️</div>
+                            <div class="skill-name">Docker</div>
+                            <div class="skill-level">
+                                <div class="skill-level-bar" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-icon">🐹</div>
+                            <div class="skill-name">Go</div>
+                            <div class="skill-level">
+                                <div class="skill-level-bar" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-icon">🌐</div>
+                            <div class="skill-name">JavaScript</div>
+                            <div class="skill-level">
+                                <div class="skill-level-bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-icon">🛠️</div>
+                            <div class="skill-name">DevOps</div>
+                            <div class="skill-level">
+                                <div class="skill-level-bar" style="width: 65%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-category fade-in delay-2">
+                    <div class="skills-category-header">
+                        <div class="skills-category-icon">🔬</div>
+                        <h3 class="skills-category-title">Analysis Tools</h3>
+                    </div>
+                    
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">🧩</div>
+                            <div class="skill-name">IDA Pro</div>
+                            <div class="skill-level">
+                                <div class="skill-level-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-icon">🔍</div>
+                            <div class="skill-name">Ghidra</div>
+                            <div class="skill-level">
+                                <div class="skill-level-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-icon">🐞</div>
+                            <div class="skill-name">GDB/WinDbg</div>
+                            <div class="skill-level">
+                                <div class="skill-level-bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-icon">🧪</div>
+                            <div class="skill-name">Fuzzing Tools</div>
+                            <div class="skill-level">
+                                <div class="skill-level-bar" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-icon">📊</div>
+                            <div class="skill-name">Static Analysis</div>
+                            <div class="skill-level">
+                                <div class="skill-level-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-icon">⚡</div>
+                            <div class="skill-name">Dynamic Analysis</div>
+                            <div class="skill-level">
+                                <div class="skill-level-bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="terminal" class="matrix-bg">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title slide-in-left"><span class="prompt">$</span> ./explore.sh</h2>
+                <div class="section-line slide-in-right"></div>
+            </div>
+            
+            <div class="card fade-in">
+                <h3 class="card-title">Interactive Terminal</h3>
+                <p>Try some commands to learn more about my projects and skills. Type <span class="highlight">help</span> to see available commands.</p>
+                
+                <div class="terminal-window interactive-terminal">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <div class="terminal-dot red"></div>
+                            <div class="terminal-dot yellow"></div>
+                            <div class="terminal-dot green"></div>
+                        </div>
+                        <div class="terminal-title">cyberwizd@visitor:~/projects</div>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="terminal-history" id="terminal-history">
+                            <div class="terminal-line">
+                                <span class="terminal-prompt">$</span>
+                                <span class="terminal-command">ls</span>
+                            </div>
+                            <div class="terminal-output">
+                                <span class="highlight">projects/</span> &nbsp; <span class="highlight">tools/</span> &nbsp; <span class="highlight">research/</span> &nbsp; <span class="highlight">exploits/</span>
+                            </div>
+                        </div>
+                        <div class="terminal-input-line">
+                            <span class="terminal-prompt">$</span>
+                            <input type="text" class="terminal-command-input" id="terminal-input" autocomplete="off" placeholder="Type a command...">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="terminal-help" id="terminal-help">
+                    <div class="terminal-help-title">Available Commands:</div>
+                    <div class="terminal-help-command">
+                        <span class="terminal-help-cmd">help</span>
+                        <span class="terminal-help-desc">Show this help message</span>
+                    </div>
+                    <div class="terminal-help-command">
+                        <span class="terminal-help-cmd">ls</span>
+                        <span class="terminal-help-desc">List directories and files</span>
+                    </div>
+                    <div class="terminal-help-command">
+                        <span class="terminal-help-cmd">cat [file]</span>
+                        <span class="terminal-help-desc">Show file contents</span>
+                    </div>
+                    <div class="terminal-help-command">
+                        <span class="terminal-help-cmd">cd [dir]</span>
+                        <span class="terminal-help-desc">Change directory</span>
+                    </div>
+                    <div class="terminal-help-command">
+                        <span class="terminal-help-cmd">projects</span>
+                        <span class="terminal-help-desc">Show my projects</span>
+                    </div>
+                    <div class="terminal-help-command">
+                        <span class="terminal-help-cmd">clear</span>
+                        <span class="terminal-help-desc">Clear terminal</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="progress">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title slide-in-left"><span class="prompt">$</span> ./progress_tracker.sh</h2>
+                <div class="section-line slide-in-right"></div>
+            </div>
+            
+            <div class="progress-section fade-in">
+                <h3 class="card-title">My Learning Journey</h3>
+                <p>Cybersecurity is an ever-evolving field, and I'm committed to continuous improvement. Here's my current progress in various areas I'm focusing on:</p>
+                
+                <div class="progress-container">
+                    <div class="progress-category">
+                        <div class="progress-category-header">
+                            <div class="progress-category-icon">🏆</div>
+                            <div class="progress-category-title">Mastery Path</div>
+                        </div>
+                        
+                        <div class="progress-skills">
+                            <div class="progress-skill">
+                                <div class="progress-skill-name">
+                                    <div class="progress-skill-title">Advanced Exploit Development</div>
+                                    <div class="progress-skill-percent">75%</div>
+                                </div>
+                                <div class="progress-skill-bar">
+                                    <div class="progress-skill-value" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="progress-skill">
+                                <div class="progress-skill-name">
+                                    <div class="progress-skill-title">Linux Kernel Exploitation</div>
+                                    <div class="progress-skill-percent">60%</div>
+                                </div>
+                                <div class="progress-skill-bar">
+                                    <div class="progress-skill-value" style="width: 60%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="progress-skill">
+                                <div class="progress-skill-name">
+                                    <div class="progress-skill-title">Advanced Reverse Engineering</div>
+                                    <div class="progress-skill-percent">80%</div>
+                                </div>
+                                <div class="progress-skill-bar">
+                                    <div class="progress-skill-value" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="progress-skill">
+                                <div class="progress-skill-name">
+                                    <div class="progress-skill-title">Secure Development Practices</div>
+                                    <div class="progress-skill-percent">85%</div>
+                                </div>
+                                <div class="progress-skill-bar">
+                                    <div class="progress-skill-value" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="progress-category">
+                        <div class="progress-category-header">
+                            <div class="progress-category-icon">📚</div>
+                            <div class="progress-category-title">Learning Goals</div>
+                        </div>
+                        
+                        <div class="progress-skills">
+                            <div class="progress-skill">
+                                <div class="progress-skill-name">
+                                    <div class="progress-skill-title">Advanced Rust Programming</div>
+                                    <div class="progress-skill-percent">50%</div>
+                                </div>
+                                <div class="progress-skill-bar">
+                                    <div class="progress-skill-value" style="width: 50%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="progress-skill">
+                                <div class="progress-skill-name">
+                                    <div class="progress-skill-title">Machine Learning for Security</div>
+                                    <div class="progress-skill-percent">40%</div>
+                                </div>
+                                <div class="progress-skill-bar">
+                                    <div class="progress-skill-value" style="width: 40%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="progress-skill">
+                                <div class="progress-skill-name">
+                                    <div class="progress-skill-title">Advanced Fuzzing Techniques</div>
+                                    <div class="progress-skill-percent">65%</div>
+                                </div>
+                                <div class="progress-skill-bar">
+                                    <div class="progress-skill-value" style="width: 65%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="progress-skill">
+                                <div class="progress-skill-name">
+                                    <div class="progress-skill-title">Hardware Security</div>
+                                    <div class="progress-skill-percent">30%</div>
+                                </div>
+                                <div class="progress-skill-bar">
+                                    <div class="progress-skill-value" style="width: 30%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="resources">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title slide-in-left"><span class="prompt">$</span> ./resource_hub.sh</h2>
+                <div class="section-line slide-in-right"></div>
+            </div>
+            
+            <div class="resources fade-in">
+                <h3 class="resource-title">Security Resources Hub</h3>
+                <p>Here are some excellent resources I've found valuable in my journey. These might help you too if you're interested in application security and exploit development.</p>
+                
+                <div class="resource-grid">
+                    <div class="resource-item">
+                        <h4 class="resource-item-title">Binary Exploitation</h4>
+                        <p class="resource-item-description">Comprehensive guides, challenge sites, and books for learning binary exploitation techniques.</p>
+                        <a href="#" class="resource-link">Explore Resources <span class="btn-arrow">→</span></a>
+                    </div>
+                    
+                    <div class="resource-item">
+                        <h4 class="resource-item-title">Reverse Engineering</h4>
+                        <p class="resource-item-description">Tools, tutorials, and practice platforms for mastering reverse engineering skills.</p>
+                        <a href="#" class="resource-link">Explore Resources <span class="btn-arrow">→</span></a>
+                    </div>
+                    
+                    <div class="resource-item">
+                        <h4 class="resource-item-title">Programming for Security</h4>
+                        <p class="resource-item-description">Learning resources for security-focused programming in languages like C, Python, and Rust.</p>
+                        <a href="#" class="resource-link">Explore Resources <span class="btn-arrow">→</span></a>
+                    </div>
+                    
+                    <div class="resource-item">
+                        <h4 class="resource-item-title">CTF Practice</h4>
+                        <p class="resource-item-description">Platforms and archives for practicing Capture The Flag challenges and improving skills.</p>
+                        <a href="#" class="resource-link">Explore Resources <span class="btn-arrow">→</span></a>
+                    </div>
+                    
+                    <div class="resource-item">
+                        <h4 class="resource-item-title">Secure Coding</h4>
+                        <p class="resource-item-description">Guidelines, checklists, and best practices for writing secure code and preventing vulnerabilities.</p>
+                        <a href="#" class="resource-link">Explore Resources <span class="btn-arrow">→</span></a>
+                    </div>
+                    
+                    <div class="resource-item">
+                        <h4 class="resource-item-title">Research Papers</h4>
+                        <p class="resource-item-description">Collection of academic papers and industry research on cutting-edge security topics.</p>
+                        <a href="#" class="resource-link">Explore Resources <span class="btn-arrow">→</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-quote">
+                "The quieter you become, the more you can hear." — Ram Dass
+            </div>
+            <div class="footer-credit">
+                Built with <span class="highlight">❤️</span> by CyberwizD | &copy; 2025
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/main.js"></script>
+    <script src="js/terminal.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
