@@ -127,6 +127,10 @@
         blink 0.75s step-end infinite;
 }
 
+.glow {
+    text-shadow: 0 0 10px rgba(100, 255, 218, 0.5);
+}
+
 /* Scrolling Matrix Background */
 .matrix-bg::after {
     content: "";
