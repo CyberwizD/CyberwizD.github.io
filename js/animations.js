@@ -113,48 +113,18 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', animateOnScroll);
     
     // Typing animation
-    // function createTypewriter(element, text, speed = 50, startDelay = 0) {
-    //     if (!element) return;
-        
-    //     element.textContent = '';
-    //     element.style.borderRight = '2px solid var(--accent)';
-        
-    //     let i = 0;
-        
-    //     setTimeout(() => {
-    //         function typing() {
-    //             if (i < text.length) {
-    //                 element.textContent += text.charAt(i);
-    //                 i++;
-    //                 setTimeout(typing, speed);
-    //             } else {
-    //                 // Remove cursor when done
-    //                 setTimeout(() => {
-    //                     element.style.borderRight = 'none';
-    //                 }, 1000);
-    //             }
-    //         }
-    //         typing();
-    //     }, startDelay);
-    // }
-
     function createTypewriter(element, text, speed = 50, startDelay = 0) {
         if (!element) return;
-    
-        element.innerHTML = ''; // Clear existing content
-        element.style.borderRight = '2px solid var(--accent)'; // Add cursor effect
-    
+        
+        element.textContent = '';
+        element.style.borderRight = '2px solid var(--accent)';
+        
         let i = 0;
-    
+        
         setTimeout(() => {
             function typing() {
                 if (i < text.length) {
-                    // Add characters one by one, respecting line breaks
-                    if (text[i] === '\n') {
-                        element.innerHTML += '<br>';
-                    } else {
-                        element.innerHTML += text[i];
-                    }
+                    element.textContent += text.charAt(i);
                     i++;
                     setTimeout(typing, speed);
                 } else {
@@ -167,6 +137,36 @@ document.addEventListener('DOMContentLoaded', function() {
             typing();
         }, startDelay);
     }
+
+    // function createTypewriter(element, text, speed = 50, startDelay = 0) {
+    //     if (!element) return;
+    
+    //     element.innerHTML = ''; // Clear existing content
+    //     element.style.borderRight = '2px solid var(--accent)'; // Add cursor effect
+    
+    //     let i = 0;
+    
+    //     setTimeout(() => {
+    //         function typing() {
+    //             if (i < text.length) {
+    //                 // Add characters one by one, respecting line breaks
+    //                 if (text[i] === '\n') {
+    //                     element.innerHTML += '<br>';
+    //                 } else {
+    //                     element.innerHTML += text[i];
+    //                 }
+    //                 i++;
+    //                 setTimeout(typing, speed);
+    //             } else {
+    //                 // Remove cursor when done
+    //                 setTimeout(() => {
+    //                     element.style.borderRight = 'none';
+    //                 }, 1000);
+    //             }
+    //         }
+    //         typing();
+    //     }, startDelay);
+    // }
     
     // Apply typing effect to terminal outputs if they have the typewriter class
     document.querySelectorAll('.typewriter').forEach(element => {
