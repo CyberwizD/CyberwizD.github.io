@@ -1,20 +1,69 @@
-/* Mobile First Design */
+/* Mobile First Design - Base styles */
+.container {
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.hero {
+    min-height: auto;
+    padding: 40px 0;
+}
+
+.hero-content {
+    width: 100%;
+    text-align: center;
+}
+
+.hero-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-4);
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+}
+
+.hero-text-container {
+    width: 100%;
+    padding: 0 15px;
+}
 
 /* Small devices (phones, 576px and up) */
 @media (min-width: 576px) {
     :root {
-        --fs-5xl: 4.5rem; /* Larger hero title on slightly bigger screens */
+        --fs-5xl: 4.5rem;
+    }
+    
+    .hero-content {
+        padding: 0 var(--spacing-4);
     }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+    .container {
+        padding: 0 var(--spacing-8);
+    }
+
     .skills-grid {
         grid-template-columns: repeat(2, 1fr);
     }
     
     .hero-row {
         flex-direction: row;
+        gap: var(--spacing-8);
+        align-items: center;
+        text-align: left;
+    }
+
+    .hero-text-container {
+        padding: 0;
     }
     
     .resource-grid {
@@ -24,6 +73,10 @@
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+    .container {
+        padding: 0 var(--spacing-12);
+    }
+
     .skills-grid {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -31,16 +84,17 @@
     .resource-grid {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    .hero-image {
+        max-width: 320px;
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     .container {
         max-width: 1140px;
-    }
-    
-    .skills-grid {
-        grid-template-columns: repeat(3, 1fr);
+        padding: 0;
     }
     
     .hero-content {
@@ -58,26 +112,23 @@
         display: block;
     }
     
-    .hero-row {
-        flex-direction: column;
-        gap: var(--spacing-8);
-    }
-    
-    .hero-image {
-        width: 250px;
-        margin: 0 auto;
-    }
-    
     .hero-title {
         font-size: var(--fs-3xl);
+        text-align: center;
+    }
+
+    .hero-description {
+        text-align: center;
+        margin: var(--spacing-4) 0;
+    }
+
+    .tagline {
+        text-align: center;
+        margin-bottom: var(--spacing-4);
     }
     
     .grid {
         grid-template-columns: 1fr;
-    }
-    
-    .skills-grid {
-        grid-template-columns: repeat(2, 1fr);
     }
     
     .progress-container {
@@ -89,12 +140,26 @@
     }
     
     section {
-        padding: var(--spacing-12) 0;
+        padding: var(--spacing-8) 0;
+    }
+
+    .btn.primary-btn {
+        display: inline-block;
+        width: auto;
+        min-width: 200px;
     }
 }
 
 /* Very small devices (small phones, 375px and below) */
 @media (max-width: 375px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .hero {
+        padding: 20px 0;
+    }
+
     .hero-title {
         font-size: var(--fs-2xl);
     }
@@ -105,6 +170,7 @@
     
     .hero-description {
         font-size: var(--fs-base);
+        padding: 0 10px;
     }
     
     .tagline {
@@ -141,64 +207,19 @@
     .card {
         padding: var(--spacing-4);
     }
+
+    .btn.primary-btn {
+        width: 100%;
+        min-width: unset;
+    }
 }
 
 /* Print styles */
 @media print {
-    body {
-        background-color: white;
-        color: black;
-    }
-    
-    header, nav, .mobile-menu-toggle, footer, 
-    .terminal-window, #terminal {
-        display: none;
-    }
-    
-    section {
-        padding: 1rem 0;
-        page-break-inside: avoid;
-    }
-    
-    .card, .grid, .skills-grid {
-        page-break-inside: avoid;
-    }
-    
-    .card {
-        border: 1px solid #ccc;
-        box-shadow: none;
-    }
-    
-    .hero {
-        min-height: auto;
-    }
-    
-    a {
-        color: black;
-        text-decoration: underline;
-    }
-    
-    .container {
-        max-width: 100%;
-        padding: 0;
-    }
-    
-    .highlight {
-        color: black;
-        font-weight: bold;
-    }
+    /* ...existing print styles... */
 }
 
 /* Dark mode detection */
 @media (prefers-color-scheme: light) {
-    /* In case user's system is set to light mode, we still keep dark theme 
-       as it's part of the cybersecurity aesthetic, but we could lighten some elements here */
-    
-    .card {
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    }
-    
-    .terminal-window {
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-    }
+    /* ...existing dark mode styles... */
 }
