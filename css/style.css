@@ -882,7 +882,8 @@ a:hover {
   position: relative;
   overflow: hidden;
   flex: 0 0 100vw;
-  min-height: 220px;
+  min-height: 180px;
+  max-width: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -950,6 +951,8 @@ a:hover {
   justify-content: center;
   gap: var(--spacing-sm);
   padding: 0 var(--spacing-xl);
+  max-width: 900px;
+  width: min(90vw, 900px);
 }
 
 /* ===================================
