@@ -43,6 +43,16 @@ function handleWheelScroll(event) {
         return;
     }
 
+    const scrollLeft = document.documentElement.scrollLeft || document.body.scrollLeft || 0;
+    const maxScrollLeft = (document.body.scrollWidth - window.innerWidth) || 0;
+    const atStart = scrollLeft <= 0;
+    const atEnd = scrollLeft >= maxScrollLeft;
+
+    // Let the natural edge/bounce happen on the first/last pane
+    if ((event.deltaY < 0 && atStart) || (event.deltaY > 0 && atEnd)) {
+        return;
+    }
+
     event.preventDefault();
 
     const scrollAmount = event.deltaY || event.deltaX;
@@ -91,6 +101,29 @@ function createScrollProgress() {
     progress.className = 'scroll-progress';
     progress.style.width = '0%';
     document.body.appendChild(progress);
+}
+
+// Scroll hint for visitors
+function createScrollHint() {
+    const hint = document.createElement('div');
+    hint.className = 'scroll-hint';
+    hint.innerHTML = `
+        <span class="hint-dot"></span>
+        <span class="hint-arrow">Scroll / Swipe →</span>
+    `;
+
+    const hideHint = () => {
+        if (!hint.parentElement) return;
+        hint.classList.add('hide');
+        setTimeout(() => hint.remove(), 400);
+    };
+
+    ['wheel', 'touchstart', 'keydown'].forEach(eventName => {
+        window.addEventListener(eventName, hideHint, { once: true, passive: eventName !== 'wheel' });
+    });
+
+    setTimeout(hideHint, 6000);
+    document.body.appendChild(hint);
 }
 
 // Scroll to specific section
@@ -606,6 +639,7 @@ document.addEventListener('DOMContentLoaded', () => {
         createScrollIndicators();
         createSectionCounter();
         createScrollProgress();
+        createScrollHint();
         updateScrollIndicators();
     }, 100);
 

@@ -194,11 +194,11 @@ a:hover {
 }
 
 #contact .section-title {
-  margin-top: var(--spacing-2xl);
+  margin-top: var(--spacing-xl);
 }
 
 #contact .contact-content {
-  margin-top: var(--spacing-lg);
+  margin-top: var(--spacing-xl);
 }
 
 /* ===================================
@@ -878,12 +878,78 @@ a:hover {
   background: var(--color-bg-secondary);
   padding: var(--spacing-xl) 0;
   text-align: center;
-  border-top: 1px solid rgba(139, 92, 246, 0.1);
+  border-top: 1px solid rgba(139, 92, 246, 0.18);
+  position: relative;
+  overflow: hidden;
+  flex: 0 0 100vw;
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-text {
-  color: var(--color-text-muted);
+  color: var(--color-text-secondary);
   font-size: var(--font-size-sm);
+  letter-spacing: 0.03em;
+  margin-top: var(--spacing-lg);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 3px;
+  background: var(--gradient-primary);
+  border-radius: 999px;
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.35);
+}
+
+.footer-text strong {
+  color: var(--color-text-primary);
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-md);
+}
+
+.footer-link {
+  width: 38px;
+  height: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(139, 92, 246, 0.12);
+  border: 1px solid rgba(139, 92, 246, 0.35);
+  color: var(--color-text-primary);
+  transition: all var(--transition-base);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.footer-link:hover {
+  background: var(--gradient-primary);
+  border-color: transparent;
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 14px 32px rgba(139, 92, 246, 0.35);
+}
+
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  padding: 0 var(--spacing-xl);
 }
 
 /* ===================================
@@ -964,6 +1030,7 @@ a:hover {
   .container {
     padding: 0 var(--spacing-lg);
     max-width: 100%;
+    width: 100%;
   }
 
   .hero {
@@ -999,15 +1066,33 @@ a:hover {
     justify-content: center;
   }
 
-  /* Hide all scroll navigation elements on mobile */
-  .scroll-indicator,
-  .scroll-dot,
-  .section-counter {
-    display: none !important;
+  /* Resize scroll navigation elements on mobile */
+  .scroll-indicator {
+    right: 12px;
+    top: 45%;
+    gap: var(--spacing-xs);
+  }
+
+  .scroll-dot {
+    width: 10px;
+    height: 10px;
   }
 
   .scroll-progress {
     height: 3px;
+  }
+
+  .section-counter {
+    bottom: 14px;
+    padding: 6px 14px;
+    font-size: var(--font-size-xs);
+  }
+
+  .scroll-hint {
+    bottom: 52px;
+    font-size: var(--font-size-xs);
+    padding: 6px 12px;
+    gap: 6px;
   }
 }
 
@@ -1184,12 +1269,15 @@ a:hover {
 
   /* About Section */
   .about-content {
-    text-align: left;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 90vw;
   }
 
   .about-text {
     font-size: var(--font-size-base);
     margin-bottom: var(--spacing-md);
+    text-align: center;
   }
 
   /* Skills Section */
@@ -1250,6 +1338,8 @@ a:hover {
   /* Contact Section */
   .contact-content {
     text-align: center;
+    margin: 0 auto;
+    max-width: 90vw;
   }
 
   .contact-text {
@@ -1260,10 +1350,20 @@ a:hover {
   .contact-methods {
     grid-template-columns: 1fr;
     gap: var(--spacing-md);
+    width: 100%;
+    max-width: 95vw;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .contact-method {
     padding: var(--spacing-md);
+  }
+
+  #contact .section-title {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: var(--spacing-lg);
   }
 }
 
@@ -1330,6 +1430,24 @@ a:hover {
   .project-card,
   .skill-category {
     padding: var(--spacing-sm);
+  }
+
+  .scroll-indicator {
+    right: 8px;
+  }
+
+  .scroll-dot {
+    width: 9px;
+    height: 9px;
+  }
+
+  .section-counter {
+    bottom: 12px;
+    padding: 6px 12px;
+  }
+
+  .scroll-hint {
+    bottom: 46px;
   }
 }
 
@@ -1459,19 +1577,70 @@ a:hover {
   left: 50%;
   transform: translateX(-50%);
   z-index: var(--z-fixed);
-  background: rgba(26, 26, 36, 0.9);
+  background: linear-gradient(145deg, rgba(26, 26, 36, 0.95), rgba(18, 18, 26, 0.92));
   backdrop-filter: blur(10px);
-  padding: 8px 20px;
-  border-radius: 20px;
-  border: 1px solid rgba(139, 92, 246, 0.3);
+  padding: 10px 22px;
+  border-radius: 999px;
+  border: 1px solid rgba(139, 92, 246, 0.35);
   font-size: var(--font-size-sm);
   color: var(--color-text-secondary);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45), 0 0 18px rgba(139, 92, 246, 0.25);
+  letter-spacing: 0.02em;
 }
 
 .section-counter .current {
   color: var(--color-accent-purple);
   font-weight: 700;
   font-size: var(--font-size-lg);
+}
+
+/* Scroll hint */
+.scroll-hint {
+  position: fixed;
+  bottom: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: var(--z-fixed);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(26, 26, 36, 0.9);
+  border: 1px solid rgba(139, 92, 246, 0.35);
+  backdrop-filter: blur(10px);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+  animation: floatHint 2.4s ease-in-out infinite;
+}
+
+.scroll-hint .hint-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-accent-purple);
+  box-shadow: 0 0 10px rgba(139, 92, 246, 0.6);
+}
+
+.scroll-hint .hint-arrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.scroll-hint.hide {
+  opacity: 0;
+  transform: translateX(-50%) translateY(6px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+@keyframes floatHint {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-6px);
+  }
 }
 /* Desktop only - Add margin to section titles */
 @media (min-width: 1025px) {
