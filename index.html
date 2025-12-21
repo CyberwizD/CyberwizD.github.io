@@ -1,596 +1,720 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CyberwizD | Portfolio</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/components.css">
-    <link rel="stylesheet" href="css/animations.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=JetBrains+Mono:wght@400;500;700&display=swap">
+    <meta name="description"
+        content="Udoye Wisdom Chukwuebuka - Security-focused Software Engineer specializing in Application Security, Backend Development, and VAPT with 3+ years of experience.">
+    <meta name="keywords"
+        content="Software Engineer, Backend Developer, Application Security, Python, Golang, VAPT, Penetration Testing">
+    <meta name="author" content="Udoye Wisdom Chukwuebuka">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Udoye Wisdom Chukwuebuka - Software Engineer">
+    <meta property="og:description"
+        content="Security-focused Software Engineer with expertise in Application Security and Backend Development">
+    <meta property="og:type" content="website">
+
+    <title>Udoye Wisdom Chukwuebuka | Software Engineer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <header>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
         <div class="container nav-container">
-            <a href="#" class="logo">Cyberwiz<span>D</span></a>
-            <nav class="desktop-nav">
-                <ul>
-                    <li><a href="#whoami">$ whoami</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#terminal">Terminal</a></li>
-                    <li><a href="#progress">Progress</a></li>
-                    <li><a href="#resources">Hub</a></li>
-                </ul>
-            </nav>
-            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+            <a href="#home" class="nav-logo">WU</a>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
         </div>
-    </header>
-    
-    <nav class="mobile-nav">
-        <ul>
-            <li><a href="#whoami">$ whoami</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#terminal">Terminal</a></li>
-            <li><a href="#progress">Progress</a></li>
-            <li><a href="#resources">Hub</a></li>
-        </ul>
     </nav>
-    
-    <section class="hero">
+
+    <!-- Hero Section -->
+    <section class="hero section" id="home">
         <div class="container">
             <div class="hero-content">
-                <div class="hero-subtitle fade-in">Hey, they call me</div>
-                <h1 class="hero-title fade-in delay-1">CyberwizD<span class="highlight">.</span></h1>
-                
-                <div class="hero-row">
-                    <div class="hero-image fade-in delay-2">
-                        <img src="https://images.unsplash.com/photo-1513789181297-6f2ec112c0bc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8aGFja2VyfGVufDB8fDB8fHww" alt="xHacker">
+                <div class="hero-text">
+                    <div class="hero-greeting">
+                        <span class="status-indicator"></span>
+                        Available to work
                     </div>
-                    
-                    <div class="hero-text-container fade-in delay-3">
-                        <div class="tagline typing-text">Where Software Meets Security.</div> <!-- Where Code Meets Exploits — Reversing, Breaking, Building -->
-                        <p class="hero-description">I specialize in Application Security and Secure Software Engineering. Building tools, crafting exploits, and understanding systems at their lowest level.</p>
-                        <a href="#skills" class="btn primary-btn">Explore My Skillset <span class="btn-arrow">→</span></a>
+                    <h1 class="hero-title">Udoye Wisdom</h1>
+                    <p class="hero-subtitle">Software Engineer</p>
+                    <p class="hero-description">
+                        Security-focused Software Engineer with 3+ years of progressive experience in the IT industry.
+                        Specialized in Application Security and Software Engineering, with hands-on expertise in VAPT,
+                        SSDLC, and backend development.
+                    </p>
+
+                    <div class="hero-meta">
+                        <div class="meta-item">
+                            <svg class="meta-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                            Lagos, Nigeria
+                        </div>
+                        <div class="meta-item">
+                            <svg class="meta-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                            Backend Engineer
+                        </div>
+                        <div class="meta-item">
+                            <svg class="meta-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                            </svg>
+                            Bells University of Technology
+                        </div>
+                    </div>
+
+                    <div class="hero-cta">
+                        <a href="#contact" class="btn btn-primary">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                            Get In Touch
+                        </a>
+                        <a href="#projects" class="btn btn-secondary">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                            </svg>
+                            View Projects
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-profile">
+                    <div class="profile-card">
+                        <div class="profile-image-wrapper">
+                            <div class="profile-ring"></div>
+                            <img src="https://ui-avatars.com/api/?name=Wisdom+Udoye&size=180&background=8b5cf6&color=fff&bold=true"
+                                alt="Udoye Wisdom Chukwuebuka" class="profile-image" id="profileImage">
+                        </div>
+
+                        <div class="profile-stats">
+                            <div class="stat-item">
+                                <span class="stat-value" data-target="3">0</span>
+                                <span class="stat-label">Years Experience</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value" data-target="5">0</span>
+                                <span class="stat-label">Companies</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value" data-target="10">0</span>
+                                <span class="stat-label">Projects</span>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="https://github.com/yourusername" class="social-link" target="_blank" rel="noopener"
+                                aria-label="GitHub">
+                                <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                            </a>
+                            <a href="https://linkedin.com/in/yourusername" class="social-link" target="_blank"
+                                rel="noopener" aria-label="LinkedIn">
+                                <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                                </svg>
+                            </a>
+                            <a href="mailto:your.email@example.com" class="social-link" aria-label="Email">
+                                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                            </a>
+                            <a href="tel:+2347058980766" class="social-link" aria-label="Phone">
+                                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="hero-bg-pattern"></div>
     </section>
-    
-    <section id="whoami" class="matrix-bg">
+
+    <!-- About Section -->
+    <section class="section" id="about">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title slide-in-left"><span class="prompt">$</span> whoami</h2>
-                <div class="section-line slide-in-right"></div>
-            </div>
-            
-            <!-- <div class="grid fade-in">
-                <div class="card">
-                    <h3 class="card-title">The Path I Follow</h3>
-                    <p>I'm a dedicated security specialist focused on understanding how applications work at their core and finding innovative ways to break and secure them. My journey began with a deep fascination for reverse engineering and has evolved into comprehensive expertise in application security.</p>
-                    <p>By day, I work as an application security engineer. By night, I develop custom security tools and research new exploitation techniques to stay ahead of the curve.</p>
-                    <p>With a background in Computer Engineering and specialized training in low-level systems programming, I bring a unique perspective that combines deep technical knowledge with practical security insights.</p>
-                </div>
-                
-                <div class="card">
-                    <h3 class="card-title">My Security Philosophy</h3>
-                    <p>I believe that true security comes from understanding both sides of the equation. To build secure systems, you must think like an attacker. To find vulnerabilities effectively, you must understand how developers build software.</p>
-                    <p>This dual perspective allows me to bridge the gap between security findings and practical fixes, creating solutions that are both secure and implementable in real-world environments.</p>
-                    <p>I'm passionate about sharing knowledge and contributing to the security community through open-source tools, research, and mentoring others on their journey.</p>
-                </div>
-            </div> -->
-            
-            <div class="card terminal-card fade-in delay-2">
-                <h3 class="card-title">The Discovery</h3>
-                <p>They say you can’t serve two masters. I say why not build one, exploit the other, and secure both?
-                    I stand in the rare space between creation and destruction, where few professionals comfortably operate.
-                    While most developers build without breaking and most security experts break without building, I've cultivated the ability to do both with equal proficiency.
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content fade-in">
+                <p class="about-text">
+                    I'm a <span class="highlight">Security-focused Software Engineer</span> with 3+ years of progressive
+                    experience in the IT industry. I specialize in <span class="highlight">Application Security</span>
+                    and
+                    <span class="highlight">Software Engineering</span>, with hands-on expertise in Vulnerability
+                    Assessment
+                    & Penetration Testing (VAPT), Secure Software Development Lifecycle (SSDLC), and backend
+                    development,
+                    particularly for APIs and Web Applications.
                 </p>
-                <div class="terminal-window">
-                    <div class="terminal-header">
-                        <div class="terminal-dots">
-                            <div class="terminal-dot red"></div>
-                            <div class="terminal-dot yellow"></div>
-                            <div class="terminal-dot green"></div>
-                        </div>
-                        <div class="terminal-title">cyberwizd@kali:~/identity</div>
-                    </div>
-                    <div class="terminal-body">
-                        <div class="terminal-line">
-                            <span class="terminal-prompt">$</span>
-                            <span class="terminal-command">echo $MY_SPECIALIZATION</span> <!-- cat profile.json | jq -->
-                        </div>
-                        <div class="terminal-output glow"> <!-- typewriter -->
-                            Application Security and Software Engineering
-                            <!-- {<br>
-                            &nbsp;&nbsp;"name": "CyberwizD",<br>
-                            &nbsp;&nbsp;"title": "Application Security Specialist & Software Developer",<br>
-                            &nbsp;&nbsp;"background": "Computer Engineering & Cybersecurity",<br>
-                            &nbsp;&nbsp;"skills": {<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;"languages": ["Python", "GoLang", "C"],<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;"security": ["API Security", "Penetration Testing", "Malware Research"]<br>
-                            &nbsp;&nbsp;}<br>
-                            } -->
-                        </div>
+                <p class="about-text">
+                    Proficient in <span class="highlight">Python</span> (automation, AI) and <span
+                        class="highlight">Golang</span>
+                    (backend, APIs), I have built a wide range of custom security tools, software, and automation
+                    scripts to
+                    support development and security objectives. I'm passionate about creating secure, scalable, and
+                    efficient
+                    solutions that make a real impact.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category fade-in">
+                    <h3 class="skill-category-title">
+                        <svg class="skill-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                        </svg>
+                        Programming Languages
+                    </h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">GoLang</span>
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">Bash</span>
                     </div>
                 </div>
-                
-                <div class="specialization-display">
-                    <h3 class="card-title">Core Specializations</h3>
-                    <div class="specialization-bubbles">
-                        <div class="specialization-bubble">Building Software Applications</div>
-                        <div class="specialization-bubble">Secure API Development</div>
-                        <div class="specialization-bubble">CVEs Analysis & Research</div>
-                        <div class="specialization-bubble">Secure-by-Design Development</div>
-                        <div class="specialization-bubble">Software Auditing</div>
-                        <div class="specialization-bubble">Vulnerability Research</div>
-                        <div class="specialization-bubble">Penetration Testing</div>
-                        <div class="specialization-bubble">SAST/DAST</div>
+
+                <div class="skill-category fade-in">
+                    <h3 class="skill-category-title">
+                        <svg class="skill-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
+                        </svg>
+                        Backend & Frameworks
+                    </h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Gin</span>
+                        <span class="skill-tag">Gorilla Mux</span>
+                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">Flet</span>
+                        <span class="skill-tag">Streamlit</span>
+                        <span class="skill-tag">Gorm</span>
+                        <span class="skill-tag">Reflex</span>
+                    </div>
+                </div>
+
+                <div class="skill-category fade-in">
+                    <h3 class="skill-category-title">
+                        <svg class="skill-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
+                        </svg>
+                        Databases
+                    </h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">Firebase</span>
+                        <span class="skill-tag">Redis</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">SQLite</span>
+                    </div>
+                </div>
+
+                <div class="skill-category fade-in">
+                    <h3 class="skill-category-title">
+                        <svg class="skill-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
+                        </svg>
+                        Infrastructure & DevOps
+                    </h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Render</span>
+                        <span class="skill-tag">Cloudflare</span>
+                        <span class="skill-tag">Nginx</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">MinIO</span>
+                        <span class="skill-tag">Prometheus</span>
+                        <span class="skill-tag">Grafana</span>
+                    </div>
+                </div>
+
+                <div class="skill-category fade-in">
+                    <h3 class="skill-category-title">
+                        <svg class="skill-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                        API Design
+                    </h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">RESTful</span>
+                        <span class="skill-tag">Webhook</span>
+                        <span class="skill-tag">WebSocket</span>
+                        <span class="skill-tag">AMQP</span>
+                        <span class="skill-tag">RabbitMQ</span>
+                    </div>
+                </div>
+
+                <div class="skill-category fade-in">
+                    <h3 class="skill-category-title">
+                        <svg class="skill-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                        </svg>
+                        Security & Tools
+                    </h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Burp Suite</span>
+                        <span class="skill-tag">OWASP ZAP</span>
+                        <span class="skill-tag">Metasploit</span>
+                        <span class="skill-tag">Nmap</span>
+                        <span class="skill-tag">Snyk</span>
+                        <span class="skill-tag">VAPT</span>
+                        <span class="skill-tag">SSDLC</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
-    <section id="skills">
+
+    <!-- Experience Section -->
+    <section class="section" id="experience">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title slide-in-left"><span class="prompt">$</span> ./display_skills.sh</h2>
-                <div class="section-line slide-in-right"></div>
-            </div>
-            
-            <div class="skills-container">
-                <div class="skills-category fade-in">
-                    <div class="skills-category-header">
-                        <div class="skills-category-icon">🔓</div>
-                        <h3 class="skills-category-title">Application Security</h3>
-                    </div>
-                    
-                    <div class="skills-grid">
-                        <div class="skill-item">
-                            <div class="skill-icon">🧩</div>
-                            <div class="skill-name">API Security</div>
-                            <div class="skill-level">
-                                <div class="skill-level-bar" style="width: 85%"></div>
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="experience-timeline">
+                <!-- HNG Tech -->
+                <div class="timeline-item fade-in">
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <div class="experience-title">
+                                <h3 class="experience-role">Backend Engineer</h3>
+                                <p class="experience-company">HNG TECH</p>
                             </div>
+                            <span class="experience-period">Oct - Dec 2025</span>
                         </div>
-                        
-                        <div class="skill-item">
-                            <div class="skill-icon">🌍</div>
-                            <div class="skill-name">Networking</div>
-                            <div class="skill-level">
-                                <div class="skill-level-bar" style="width: 80%"></div>
-                            </div>
-                        </div>
-                        
-                        <div class="skill-item">
-                            <div class="skill-icon">🔐</div>
-                            <div class="skill-name">Secure Coding Practices</div>
-                            <div class="skill-level">
-                                <div class="skill-level-bar" style="width: 75%"></div>
-                            </div>
-                        </div>
-                        
-                        <div class="skill-item">
-                            <div class="skill-icon">🕸️</div>
-                            <div class="skill-name">Web Application Security</div>
-                            <div class="skill-level">
-                                <div class="skill-level-bar" style="width: 90%"></div>
-                            </div>
-                        </div>
-
-                        <div class="skill-item">
-                            <div class="skill-icon">🤖</div>
-                            <div class="skill-name">Automation</div>
-                            <div class="skill-level">
-                                <div class="skill-level-bar" style="width: 75%"></div>
-                            </div>
-                        </div>
-                        
-                        <div class="skill-item">
-                            <div class="skill-icon">🐧</div>
-                            <div class="skill-name">Linux</div>
-                            <div class="skill-level">
-                                <div class="skill-level-bar" style="width: 85%"></div>
-                            </div>
-                        </div>
+                        <ul class="experience-description">
+                            <li>Implemented API Gateway for routing user and notification requests</li>
+                            <li>Developed and integrated backend features (live video & audio calls) into the Telex
+                                platform</li>
+                            <li>Designed and implemented a Team Decision Note Agent to automate 90% of finding key notes
+                                in chat logs</li>
+                            <li>Debugged build issues and optimized multi-stage Dockerfile</li>
+                            <li>Documented every REST API endpoint and integrated tests for new features</li>
+                            <li>Worked as a team of 50+ and led the backend team in collaboration with the mobile,
+                                frontend, and PM</li>
+                        </ul>
                     </div>
                 </div>
-                
-                <div class="skills-category fade-in delay-1">
-                    <div class="skills-category-header">
-                        <div class="skills-category-icon">💻</div>
-                        <h3 class="skills-category-title">Software Engineering</h3>
-                    </div>
-                    
-                    <div class="skills-grid">
-                        <div class="skill-item">
-                            <div class="skill-icon">🐍</div>
-                            <div class="skill-name">Python</div>
-                            <div class="skill-level">
-                                <div class="skill-level-bar" style="width: 95%"></div>
-                            </div>
-                        </div>
 
-                        <div class="skill-item">
-                            <div class="skill-icon">🐹</div>
-                            <div class="skill-name">Go</div>
-                            <div class="skill-level">
-                                <div class="skill-level-bar" style="width: 75%"></div>
+                <!-- Identiko -->
+                <div class="timeline-item fade-in">
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <div class="experience-title">
+                                <h3 class="experience-role">Software Developer</h3>
+                                <p class="experience-company">IDENTIKO INTEGRATED SOLUTIONS</p>
                             </div>
+                            <span class="experience-period">Jul - Sep 2025</span>
                         </div>
-                        
-                        <div class="skill-item">
-                            <div class="skill-icon">⚙️</div>
-                            <div class="skill-name">C</div>
-                            <div class="skill-level">
-                                <div class="skill-level-bar" style="width: 65%"></div>
-                            </div>
-                        </div>
-                        
-                        <div class="skill-item">
-                            <div class="skill-icon">🐋</div>
-                            <div class="skill-name">Docker</div>
-                            <div class="skill-level">
-                                <div class="skill-level-bar" style="width: 70%"></div>
-                            </div>
-                        </div>
-                        
-                        <div class="skill-item">
-                            <div class="skill-icon">🌐</div>
-                            <div class="skill-name">REST APIs</div>
-                            <div class="skill-level">
-                                <div class="skill-level-bar" style="width: 80%"></div>
-                            </div>
-                        </div>
-                        
-                        <div class="skill-item">
-                            <div class="skill-icon">🛠️</div>
-                            <div class="skill-name">Git & GitHub</div>
-                            <div class="skill-level">
-                                <div class="skill-level-bar" style="width: 65%"></div>
-                            </div>
-                        </div>
-
-                        <div class="skill-item">
-                            <div class="skill-icon">🗂️</div>
-                            <div class="skill-name">Firebase</div>
-                            <div class="skill-level">
-                                <div class="skill-level-bar" style="width: 70%"></div>
-                            </div>
-                        </div>
-
-                        <div class="skill-item">
-                            <div class="skill-icon">📝</div>
-                            <div class="skill-name">SQL</div>
-                            <div class="skill-level">
-                                <div class="skill-level-bar" style="width: 60%"></div>
-                            </div>
-                        </div>
-
-                        <div class="skill-item">
-                            <div class="skill-icon">✒️</div>
-                            <div class="skill-name">Technical Writing</div>
-                            <div class="skill-level">
-                                <div class="skill-level-bar" style="width: 70%"></div>
-                            </div>
-                        </div>
+                        <ul class="experience-description">
+                            <li>Designed and implemented a real-time QR code-based authentication system for access
+                                control and management</li>
+                            <li>Optimized performance through caching mechanism and session management implementation
+                            </li>
+                            <li>Integrated AI model for automated data processing reducing analysis time by 80%</li>
+                        </ul>
                     </div>
                 </div>
-                
-                <div class="skills-category fade-in delay-2">
-                    <div class="skills-category-header">
-                        <div class="skills-category-icon">🔬</div>
-                        <h3 class="skills-category-title">Toolkit</h3>
+
+                <!-- Stratify -->
+                <div class="timeline-item fade-in">
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <div class="experience-title">
+                                <h3 class="experience-role">Backend Engineer</h3>
+                                <p class="experience-company">STRATIFY</p>
+                            </div>
+                            <span class="experience-period">May - Present 2025</span>
+                        </div>
+                        <ul class="experience-description">
+                            <li>Design and implement scalable backend architecture for content management and
+                                distribution platform</li>
+                            <li>Develop and maintain RESTful APIs to enable seamless communication between services</li>
+                            <li>Integrate secure authentication and authorization systems (OAuth2, JWT)</li>
+                            <li>Optimize database performance and schema design using PostgreSQL</li>
+                        </ul>
                     </div>
-                    
-                    <div class="skills-grid">
-                        <div class="skill-item">
-                            <div class="skill-icon">🚨</div>
-                            <div class="skill-name">Burp Suite</div>
-                            <div class="skill-level">
-                                <div class="skill-level-bar" style="width: 90%"></div>
+                </div>
+
+                <!-- MRX Network -->
+                <div class="timeline-item fade-in">
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <div class="experience-title">
+                                <h3 class="experience-role">GoLang Developer</h3>
+                                <p class="experience-company">MRX NETWORK</p>
                             </div>
+                            <span class="experience-period">Mar - Apr 2025</span>
                         </div>
-                        
-                        <div class="skill-item">
-                            <div class="skill-icon">📬</div>
-                            <div class="skill-name">Postman</div>
-                            <div class="skill-level">
-                                <div class="skill-level-bar" style="width: 85%"></div>
+                        <ul class="experience-description">
+                            <li>Developed a secure and scalable backend system using Golang to improve healthcare
+                                services</li>
+                            <li>Designed and implemented FHIR-compliant RESTful APIs leveraging Go modules and libraries
+                            </li>
+                            <li>Provided detailed pull request descriptions and collaborated during code reviews to
+                                ensure FHIR compliance</li>
+                            <li>Ensured data integrity by implementing validation and reducing errors by 30%</li>
+                            <li>Configured Docker environments for local development and testing</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Cyber & Forensics -->
+                <div class="timeline-item fade-in">
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <div class="experience-title">
+                                <h3 class="experience-role">Pentester Intern</h3>
+                                <p class="experience-company">CYBER & FORENSICS SECURITY SOLUTIONS</p>
                             </div>
+                            <span class="experience-period">Aug - Sep 2024</span>
                         </div>
-                        
-                        <div class="skill-item">
-                            <div class="skill-icon">🧠</div>
-                            <div class="skill-name">Obsidian</div>
-                            <div class="skill-level">
-                                <div class="skill-level-bar" style="width: 80%"></div>
-                            </div>
-                        </div>
-                        
-                        <div class="skill-item">
-                            <div class="skill-icon">🧪</div>
-                            <div class="skill-name">OWASP ZAP</div>
-                            <div class="skill-level">
-                                <div class="skill-level-bar" style="width: 75%"></div>
-                            </div>
-                        </div>
-                        
-                        <div class="skill-item">
-                            <div class="skill-icon">📊</div>
-                            <div class="skill-name">Static Analysis</div>
-                            <div class="skill-level">
-                                <div class="skill-level-bar" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        
-                        <div class="skill-item">
-                            <div class="skill-icon">⚡</div>
-                            <div class="skill-name">Dynamic Analysis</div>
-                            <div class="skill-level">
-                                <div class="skill-level-bar" style="width: 80%"></div>
-                            </div>
-                        </div>
+                        <ul class="experience-description">
+                            <li>Contributed to security testing initiatives aimed at assessing system vulnerabilities
+                            </li>
+                            <li>Conducted comprehensive penetration tests including reconnaissance, scanning,
+                                exploitation, and post-exploitation</li>
+                            <li>Documented procedures and steps followed during penetration testing engagements</li>
+                            <li>Gained practical experience using tools such as Nmap, Metasploit, Hydra, and Burp Suite
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
-    <section id="terminal" class="matrix-bg">
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title slide-in-left"><span class="prompt">$</span> ./explore.sh</h2>
-                <div class="section-line slide-in-right"></div>
-            </div>
-            
-            <div class="card fade-in">
-                <h3 class="card-title">Interactive Terminal</h3>
-                <p>Try some commands to learn more about my projects and skills. Type <span class="highlight">help</span> to see available commands.</p>
-                
-                <div class="terminal-window interactive-terminal">
-                    <div class="terminal-header">
-                        <div class="terminal-dots">
-                            <div class="terminal-dot red"></div>
-                            <div class="terminal-dot yellow"></div>
-                            <div class="terminal-dot green"></div>
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Drug Recommendation System -->
+                <div class="project-card fade-in">
+                    <div class="project-header">
+                        <svg class="project-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+                        </svg>
+                        <div class="project-links">
+                            <a href="#" class="project-link" target="_blank" rel="noopener" aria-label="View on GitHub">
+                                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="project-link" target="_blank" rel="noopener" aria-label="View Live Demo">
+                                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                </svg>
+                            </a>
                         </div>
-                        <div class="terminal-title">cyberwizd@visitor:~/projects</div>
                     </div>
-                    <div class="terminal-body">
-                        <div class="terminal-history" id="terminal-history">
-                            <div class="terminal-line">
-                                <span class="terminal-prompt">$</span>
-                                <span class="terminal-command">ls</span>
-                            </div>
-                            <div class="terminal-output">
-                                <span class="highlight">projects/</span> &nbsp; <span class="highlight">tools/</span> &nbsp; <span class="highlight">research/</span> &nbsp; <span class="highlight">exploits/</span>
-                            </div>
-                        </div>
-                        <div class="terminal-input-line">
-                            <span class="terminal-prompt">$</span>
-                            <input type="text" class="terminal-command-input" id="terminal-input" autocomplete="off" placeholder="Type a command...">
-                        </div>
+                    <h3 class="project-title">Drug Recommendation System</h3>
+                    <p class="project-description">
+                        Production-ready Drug Recommendation System using ML, NLP, and Sentiment Analysis. Features user
+                        search tracking,
+                        interactive UI, and hybrid ranking with sentiment scores.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Reflex</span>
+                        <span class="tech-tag">LightGBM</span>
+                        <span class="tech-tag">VADER</span>
+                        <span class="tech-tag">SQLite</span>
+                        <span class="tech-tag">Scikit-learn</span>
                     </div>
                 </div>
-                
-                <div class="terminal-help" id="terminal-help">
-                    <div class="terminal-help-title">Available Commands:</div>
-                    <div class="terminal-help-command">
-                        <span class="terminal-help-cmd">help</span>
-                        <span class="terminal-help-desc">Show this help message</span>
+
+                <!-- Autobot -->
+                <div class="project-card fade-in">
+                    <div class="project-header">
+                        <svg class="project-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                        <div class="project-links">
+                            <a href="#" class="project-link" target="_blank" rel="noopener" aria-label="View on GitHub">
+                                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="project-link" target="_blank" rel="noopener" aria-label="View Live Demo">
+                                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                </svg>
+                            </a>
+                        </div>
                     </div>
-                    <div class="terminal-help-command">
-                        <span class="terminal-help-cmd">ls</span>
-                        <span class="terminal-help-desc">List directories and files</span>
-                    </div>
-                    <div class="terminal-help-command">
-                        <span class="terminal-help-cmd">cat [file]</span>
-                        <span class="terminal-help-desc">Show file contents</span>
-                    </div>
-                    <div class="terminal-help-command">
-                        <span class="terminal-help-cmd">cd [dir]</span>
-                        <span class="terminal-help-desc">Change directory</span>
-                    </div>
-                    <div class="terminal-help-command">
-                        <span class="terminal-help-cmd">projects</span>
-                        <span class="terminal-help-desc">Show my projects</span>
-                    </div>
-                    <div class="terminal-help-command">
-                        <span class="terminal-help-cmd">clear</span>
-                        <span class="terminal-help-desc">Clear terminal</span>
+                    <h3 class="project-title">Autobot</h3>
+                    <p class="project-description">
+                        Workflow automation system to streamline personal and business data tasks. Supports file uploads
+                        (Excel/CSV)
+                        for processing into dataframes and generating meaningful reports.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Streamlit</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">Gemini API</span>
+                        <span class="tech-tag">Openpyxl</span>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    
-    <section id="progress">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title slide-in-left"><span class="prompt">$</span> ./progress_tracker.sh</h2>
-                <div class="section-line slide-in-right"></div>
-            </div>
-            
-            <div class="progress-section fade-in">
-                <h3 class="card-title">My Learning Journey</h3>
-                <p>Cybersecurity is an ever-evolving field, and I'm committed to continuous improvement. Here's my current progress in various areas I'm focusing on:</p>
-                
-                <div class="progress-container">
-                    <div class="progress-category">
-                        <div class="progress-category-header">
-                            <div class="progress-category-icon">🏆</div>
-                            <div class="progress-category-title">Mastery Path</div>
-                        </div>
-                        
-                        <div class="progress-skills">
-                            <div class="progress-skill">
-                                <div class="progress-skill-name">
-                                    <div class="progress-skill-title">Software Development</div>
-                                    <div class="progress-skill-percent">75%</div>
-                                </div>
-                                <div class="progress-skill-bar">
-                                    <div class="progress-skill-value" style="width: 75%"></div>
-                                </div>
-                            </div>
-                            
-                            <div class="progress-skill">
-                                <div class="progress-skill-name">
-                                    <div class="progress-skill-title">Linux & Bash Scripting</div>
-                                    <div class="progress-skill-percent">60%</div>
-                                </div>
-                                <div class="progress-skill-bar">
-                                    <div class="progress-skill-value" style="width: 60%"></div>
-                                </div>
-                            </div>
-                            
-                            <div class="progress-skill">
-                                <div class="progress-skill-name">
-                                    <div class="progress-skill-title">Tool Integration & Automation</div>
-                                    <div class="progress-skill-percent">80%</div>
-                                </div>
-                                <div class="progress-skill-bar">
-                                    <div class="progress-skill-value" style="width: 80%"></div>
-                                </div>
-                            </div>
-                            
-                            <div class="progress-skill">
-                                <div class="progress-skill-name">
-                                    <div class="progress-skill-title">Secure Development Practices</div>
-                                    <div class="progress-skill-percent">85%</div>
-                                </div>
-                                <div class="progress-skill-bar">
-                                    <div class="progress-skill-value" style="width: 85%"></div>
-                                </div>
-                            </div>
+
+                <!-- CyberSpace Scanner -->
+                <div class="project-card fade-in">
+                    <div class="project-header">
+                        <svg class="project-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                        </svg>
+                        <div class="project-links">
+                            <a href="#" class="project-link" target="_blank" rel="noopener" aria-label="View on GitHub">
+                                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                            </a>
                         </div>
                     </div>
-                    
-                    <div class="progress-category">
-                        <div class="progress-category-header">
-                            <div class="progress-category-icon">📚</div>
-                            <div class="progress-category-title">Learning Goals</div>
-                        </div>
-                        
-                        <div class="progress-skills">
-                            <div class="progress-skill">
-                                <div class="progress-skill-name">
-                                    <div class="progress-skill-title">Advanced Go Programming</div>
-                                    <div class="progress-skill-percent">50%</div>
-                                </div>
-                                <div class="progress-skill-bar">
-                                    <div class="progress-skill-value" style="width: 50%"></div>
-                                </div>
-                            </div>
-                            
-                            <div class="progress-skill">
-                                <div class="progress-skill-name">
-                                    <div class="progress-skill-title">AI for Security</div>
-                                    <div class="progress-skill-percent">40%</div>
-                                </div>
-                                <div class="progress-skill-bar">
-                                    <div class="progress-skill-value" style="width: 40%"></div>
-                                </div>
-                            </div>
-                            
-                            <div class="progress-skill">
-                                <div class="progress-skill-name">
-                                    <div class="progress-skill-title">Application Security</div>
-                                    <div class="progress-skill-percent">65%</div>
-                                </div>
-                                <div class="progress-skill-bar">
-                                    <div class="progress-skill-value" style="width: 65%"></div>
-                                </div>
-                            </div>
-                            
-                            <div class="progress-skill">
-                                <div class="progress-skill-name">
-                                    <div class="progress-skill-title">Malware Development</div>
-                                    <div class="progress-skill-percent">30%</div>
-                                </div>
-                                <div class="progress-skill-bar">
-                                    <div class="progress-skill-value" style="width: 30%"></div>
-                                </div>
-                            </div>
-                        </div>
+                    <h3 class="project-title">CyberSpace Scanner</h3>
+                    <p class="project-description">
+                        Desktop application to detect security vulnerabilities in web applications. Integrates popular
+                        scanners
+                        achieving 85% detection accuracy for common vulnerabilities.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Flet</span>
+                        <span class="tech-tag">OWASP ZAP</span>
+                        <span class="tech-tag">Firebase</span>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    
-    <section id="resources">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title slide-in-left"><span class="prompt">$</span> ./resource_hub.sh</h2>
-                <div class="section-line slide-in-right"></div>
-            </div>
-            
-            <div class="resources fade-in">
-                <h3 class="resource-title">Security Resources Hub</h3>
-                <p>Here are some excellent resources I've found valuable in my journey. These might help you too if you're interested in application security and software engineering.</p>
-                
-                <div class="resource-grid">
-                    <div class="resource-item">
-                        <h4 class="resource-item-title">Binary Exploitation</h4>
-                        <p class="resource-item-description">Comprehensive guides, challenge sites, and books for learning binary exploitation techniques.</p>
-                        <a href="#" class="resource-link">Explore Resources <span class="btn-arrow">→</span></a>
+
+                <!-- Network Inspector -->
+                <div class="project-card fade-in">
+                    <div class="project-header">
+                        <svg class="project-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                        </svg>
+                        <div class="project-links">
+                            <a href="#" class="project-link" target="_blank" rel="noopener" aria-label="View on GitHub">
+                                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                            </a>
+                        </div>
                     </div>
-                    
-                    <div class="resource-item">
-                        <h4 class="resource-item-title">Reverse Engineering</h4>
-                        <p class="resource-item-description">Tools, tutorials, and practice platforms for mastering reverse engineering skills.</p>
-                        <a href="#" class="resource-link">Explore Resources <span class="btn-arrow">→</span></a>
+                    <h3 class="project-title">CyberSpace Network Inspector</h3>
+                    <p class="project-description">
+                        Streamlit-based application to monitor and visualize real-time network traffic. Increased
+                        network visibility
+                        by 40%, enabling faster detection of anomalies.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Streamlit</span>
+                        <span class="tech-tag">Scapy</span>
+                        <span class="tech-tag">Plotly</span>
+                        <span class="tech-tag">Folium</span>
                     </div>
-                    
-                    <div class="resource-item">
-                        <h4 class="resource-item-title">Programming for Security</h4>
-                        <p class="resource-item-description">Learning resources for security-focused programming in languages like C, Python, and Rust.</p>
-                        <a href="#" class="resource-link">Explore Resources <span class="btn-arrow">→</span></a>
+                </div>
+
+                <!-- IoT Plant Monitoring -->
+                <div class="project-card fade-in">
+                    <div class="project-header">
+                        <svg class="project-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                        </svg>
+                        <div class="project-links">
+                            <a href="#" class="project-link" target="_blank" rel="noopener" aria-label="View on GitHub">
+                                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                            </a>
+                        </div>
                     </div>
-                    
-                    <div class="resource-item">
-                        <h4 class="resource-item-title">CTF Practice</h4>
-                        <p class="resource-item-description">Platforms and archives for practicing Capture The Flag challenges and improving skills.</p>
-                        <a href="#" class="resource-link">Explore Resources <span class="btn-arrow">→</span></a>
+                    <h3 class="project-title">IoT Plant Monitoring System</h3>
+                    <p class="project-description">
+                        Real-time monitoring system for soil moisture and temperature levels using Arduino and
+                        ThingSpeak.
+                        Improved irrigation efficiency by 30%.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Arduino</span>
+                        <span class="tech-tag">ThingSpeak</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">IoT</span>
                     </div>
-                    
-                    <div class="resource-item">
-                        <h4 class="resource-item-title">Secure Coding</h4>
-                        <p class="resource-item-description">Guidelines, checklists, and best practices for writing secure code and preventing vulnerabilities.</p>
-                        <a href="#" class="resource-link">Explore Resources <span class="btn-arrow">→</span></a>
+                </div>
+
+                <!-- Scientific Computing -->
+                <div class="project-card fade-in">
+                    <div class="project-header">
+                        <svg class="project-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                        </svg>
+                        <div class="project-links">
+                            <a href="#" class="project-link" target="_blank" rel="noopener" aria-label="View on GitHub">
+                                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                            </a>
+                        </div>
                     </div>
-                    
-                    <div class="resource-item">
-                        <h4 class="resource-item-title">Research Papers</h4>
-                        <p class="resource-item-description">Collection of academic papers and industry research on cutting-edge security topics.</p>
-                        <a href="#" class="resource-link">Explore Resources <span class="btn-arrow">→</span></a>
+                    <h3 class="project-title">Scientific Computing with Python</h3>
+                    <p class="project-description">
+                        Multiple Python projects using OOP principles for scientific computing challenges. Reduced
+                        computational
+                        run-time by 20% through optimized algorithms.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">OOP</span>
+                        <span class="tech-tag">Algorithms</span>
+                        <span class="tech-tag">Data Structures</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
-    <footer>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
         <div class="container">
-            <div class="footer-quote">
-                "It's all about your mindset." — CyberwizD
+            <h2 class="section-title">Let's Connect</h2>
+            <div class="contact-content fade-in">
+                <p class="contact-text">
+                    I'm always open to discussing new projects, creative ideas, or opportunities to be part of your
+                    visions.
+                    Feel free to reach out through any of the channels below!
+                </p>
+
+                <div class="hero-cta">
+                    <a href="mailto:your.email@example.com" class="btn btn-primary">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                        Send Email
+                    </a>
+                    <a href="https://linkedin.com/in/yourusername" class="btn btn-secondary" target="_blank"
+                        rel="noopener">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                        </svg>
+                        Connect on LinkedIn
+                    </a>
+                </div>
+
+                <div class="contact-methods">
+                    <a href="mailto:your.email@example.com" class="contact-method">
+                        <svg class="contact-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                        <div class="contact-label">Email</div>
+                        <div class="contact-value">your.email@example.com</div>
+                    </a>
+
+                    <a href="tel:+2347058980766" class="contact-method">
+                        <svg class="contact-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                        </svg>
+                        <div class="contact-label">Phone</div>
+                        <div class="contact-value">+234 705 898 0766</div>
+                    </a>
+
+                    <a href="https://github.com/yourusername" class="contact-method" target="_blank" rel="noopener">
+                        <svg class="contact-icon" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                        </svg>
+                        <div class="contact-label">GitHub</div>
+                        <div class="contact-value">@yourusername</div>
+                    </a>
+
+                    <a href="#" class="contact-method">
+                        <svg class="contact-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        <div class="contact-label">Location</div>
+                        <div class="contact-value">Lagos, Nigeria</div>
+                    </a>
+                </div>
             </div>
-            <div class="footer-credit">
-                Built with <span class="highlight">❤️</span> by CyberwizD | &copy; 2025
-            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">
+                &copy; 2025 Udoye Wisdom Chukwuebuka. Built with passion and code.
+            </p>
         </div>
     </footer>
-    
+
+    <!-- JavaScript -->
     <script src="js/main.js"></script>
-    <script src="js/terminal.js"></script>
-    <script src="js/animations.js"></script>
 </body>
+
 </html>
