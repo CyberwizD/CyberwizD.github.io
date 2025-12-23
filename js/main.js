@@ -619,16 +619,16 @@ window.addEventListener('scroll', debouncedScroll);
 // CONSOLE MESSAGE
 // ===================================
 
-console.log('%c👋 Hello, Developer!', 'font-size: 20px; color: #8b5cf6; font-weight: bold;');
+console.log('%cHello, Developer!', 'font-size: 20px; color: #8b5cf6; font-weight: bold;');
 console.log('%cLooking for something? Feel free to reach out!', 'font-size: 14px; color: #3b82f6;');
-console.log('%c🚀 Built with passion by Wisdom Udoye', 'font-size: 12px; color: #06b6d4;');
+console.log('%cBuilt with passion by Wisdom Udoye', 'font-size: 12px; color: #06b6d4;');
 
 // ===================================
 // INITIALIZATION
 // ===================================
 
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('Portfolio loaded successfully! 🎉');
+    console.log('Portfolio loaded successfully!');
 
     // Force scroll to top on page load
     window.scrollTo(0, 0);
