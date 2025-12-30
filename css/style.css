@@ -1203,7 +1203,8 @@ a:hover {
   .hero-greeting {
     font-size: var(--font-size-base);
     margin-bottom: var(--spacing-xs);
-    display: block;
+    display: flex;
+    justify-content: center;
   }
 
   .hero-title {
