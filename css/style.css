@@ -1178,9 +1178,10 @@ a:hover {
   .hero {
     min-height: 100vh;
     height: auto;
-    padding: 100px 0 var(--spacing-3xl);
+    padding: 80px 0 var(--spacing-3xl);
+    padding-top: 80px;
     display: flex !important;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .hero-content {
@@ -1247,15 +1248,16 @@ a:hover {
 
   /* Profile Card */
   .profile-card {
-    padding: var(--spacing-md);
-    margin-bottom: var(--spacing-xl);
+    padding: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
     display: block;
   }
 
   .profile-image-wrapper {
-    width: 150px;
-    height: 150px;
-    margin-bottom: var(--spacing-sm);
+    width: 120px;
+    height: 120px;
+    margin-bottom: var(--spacing-xs);
+    margin-top: 10px;
     display: block;
   }
 
@@ -1424,7 +1426,16 @@ a:hover {
   }
 
   .hero {
-    padding: 80px 0 var(--spacing-xl);
+    padding: 70px 0 var(--spacing-xl);
+    align-items: flex-start;
+  }
+
+  .hero-content {
+    padding-top: var(--spacing-xs);
+  }
+
+  .profile-card {
+    margin-top: 0;
   }
 
   .hero-title {
@@ -1663,19 +1674,24 @@ a:hover {
 }
 
 @keyframes floatHint {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateX(-50%) translateY(0);
   }
+
   50% {
     transform: translateX(-50%) translateY(-6px);
   }
 }
+
 /* Desktop only - Add margin to section titles */
 @media (min-width: 1025px) {
-    .section-title {
-        margin-top: var(--spacing-3xl);
-    }
+  .section-title {
+    margin-top: var(--spacing-3xl);
+  }
 }
+
 /* ===================================
    COMPREHENSIVE LAYOUT FIXES
    Desktop & Mobile Optimization
@@ -1684,102 +1700,102 @@ a:hover {
 /* DESKTOP FIXES - Apply only on screens wider than 1024px */
 @media (min-width: 1025px) {
 
-    /* Fix section overflow and scrollbar issues */
-    .section {
-        overflow-x: hidden;
-        overflow-y: auto;
-        scrollbar-width: thin;
-        scrollbar-color: rgba(139, 92, 246, 0.3) transparent;
-    }
+  /* Fix section overflow and scrollbar issues */
+  .section {
+    overflow-x: hidden;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(139, 92, 246, 0.3) transparent;
+  }
 
-    /* Hide scrollbar but keep functionality */
-    .section::-webkit-scrollbar {
-        width: 8px;
-    }
+  /* Hide scrollbar but keep functionality */
+  .section::-webkit-scrollbar {
+    width: 8px;
+  }
 
-    .section::-webkit-scrollbar-track {
-        background: transparent;
-    }
+  .section::-webkit-scrollbar-track {
+    background: transparent;
+  }
 
-    .section::-webkit-scrollbar-thumb {
-        background: rgba(139, 92, 246, 0.3);
-        border-radius: 4px;
-    }
+  .section::-webkit-scrollbar-thumb {
+    background: rgba(139, 92, 246, 0.3);
+    border-radius: 4px;
+  }
 
-    .section::-webkit-scrollbar-thumb:hover {
-        background: rgba(139, 92, 246, 0.5);
-    }
+  .section::-webkit-scrollbar-thumb:hover {
+    background: rgba(139, 92, 246, 0.5);
+  }
 
-    /* Ensure section content is properly contained */
-    .section .container {
-        max-width: 1200px;
-        width: 100%;
-        margin: 0 auto;
-        padding: 0 var(--spacing-xl);
-    }
+  /* Ensure section content is properly contained */
+  .section .container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 var(--spacing-xl);
+  }
 
-    /* Fix section title positioning - prevent navbar overlap */
-    .section-title {
-        margin-top: var(--spacing-3xl);
-        padding-top: var(--spacing-md);
-    }
+  /* Fix section title positioning - prevent navbar overlap */
+  .section-title {
+    margin-top: var(--spacing-3xl);
+    padding-top: var(--spacing-md);
+  }
 
-    /* Experience section specific fixes */
-    .experience-timeline {
-        max-width: 900px;
-        width: 100%;
-        margin: 0 auto;
-        padding: 0 var(--spacing-md);
-    }
+  /* Experience section specific fixes */
+  .experience-timeline {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+  }
 
-    .experience-card {
-        margin-bottom: var(--spacing-xl);
-    }
+  .experience-card {
+    margin-bottom: var(--spacing-xl);
+  }
 
-    /* Skills section specific fixes */
-    .skills-grid {
-        max-width: 1000px;
-        margin: 0 auto;
-        padding: 0 var(--spacing-md);
-    }
+  /* Skills section specific fixes */
+  .skills-grid {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+  }
 
-    /* Projects section specific fixes */
-    .projects-grid {
-        max-width: 1100px;
-        margin: 0 auto;
-        padding: 0 var(--spacing-md);
-    }
+  /* Projects section specific fixes */
+  .projects-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+  }
 
-    /* Contact section specific fixes */
-    .contact-content {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 0 var(--spacing-md);
-    }
+  /* Contact section specific fixes */
+  .contact-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+  }
 
-    .contact-methods {
-        max-width: 900px;
-        margin: var(--spacing-2xl) auto 0;
-    }
+  .contact-methods {
+    max-width: 900px;
+    margin: var(--spacing-2xl) auto 0;
+  }
 }
 
 /* MOBILE FIXES - Reset desktop-specific styles */
 @media (max-width: 1024px) {
 
-    /* Remove desktop-specific margins */
-    .section-title {
-        margin-top: 0;
-        padding-top: 0;
-    }
+  /* Remove desktop-specific margins */
+  .section-title {
+    margin-top: 0;
+    padding-top: 0;
+  }
 
-    /* Ensure proper spacing for mobile */
-    .section {
-        padding-top: 100px;
-        padding-bottom: var(--spacing-3xl);
-    }
+  /* Ensure proper spacing for mobile */
+  .section {
+    padding-top: 100px;
+    padding-bottom: var(--spacing-3xl);
+  }
 
-    /* First section (hero) needs less top padding */
-    .section:first-of-type {
-        padding-top: 80px;
-    }
+  /* First section (hero) needs less top padding */
+  .section:first-of-type {
+    padding-top: 80px;
+  }
 }
