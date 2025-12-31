@@ -756,7 +756,7 @@ a:hover {
    =================================== */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: var(--spacing-xl);
 }
 
@@ -766,68 +766,97 @@ a:hover {
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid var(--glass-border);
   border-radius: var(--radius-lg);
-  padding: var(--spacing-xl);
   transition: all var(--transition-base);
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .project-card:hover {
   border-color: var(--color-accent-purple);
-  transform: translateY(-10px);
+  transform: translateY(-8px);
   box-shadow: 0 12px 40px rgba(139, 92, 246, 0.3);
 }
 
-.project-header {
+/* Project Preview Image */
+.project-preview {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  background: var(--color-bg-tertiary);
+}
+
+.project-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  transition: transform var(--transition-slow);
+}
+
+.project-card:hover .project-preview img {
+  transform: scale(1.05);
+}
+
+/* Status Badge */
+.project-status {
+  position: absolute;
+  bottom: var(--spacing-sm);
+  left: var(--spacing-sm);
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  backdrop-filter: blur(4px);
+}
+
+.project-status.live {
+  background: rgba(6, 182, 212, 0.85);
+  color: white;
+  border: none;
+}
+
+.project-status.development {
+  background: rgba(251, 191, 36, 0.85);
+  color: #1a1a24;
+  border: none;
+}
+
+.project-status.completed {
+  background: rgba(34, 197, 94, 0.85);
+  color: white;
+  border: none;
+}
+
+/* Project Content */
+.project-content {
+  padding: var(--spacing-lg);
+  flex: 1;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: var(--spacing-md);
-}
-
-.project-icon {
-  width: 40px;
-  height: 40px;
-  color: var(--color-accent-purple);
-}
-
-.project-links {
-  display: flex;
-  gap: var(--spacing-sm);
-}
-
-.project-link {
-  width: 35px;
-  height: 35px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(139, 92, 246, 0.1);
-  border-radius: var(--radius-sm);
-  transition: all var(--transition-fast);
-}
-
-.project-link:hover {
-  background: var(--color-accent-purple);
-  transform: scale(1.1);
+  flex-direction: column;
 }
 
 .project-title {
   font-size: var(--font-size-xl);
   margin-bottom: var(--spacing-sm);
+  color: var(--color-text-primary);
 }
 
 .project-description {
   color: var(--color-text-secondary);
   margin-bottom: var(--spacing-md);
   flex: 1;
+  font-size: var(--font-size-sm);
+  line-height: 1.6;
 }
 
 .project-tech {
   display: flex;
   flex-wrap: wrap;
   gap: var(--spacing-xs);
-  margin-top: auto;
 }
 
 .tech-tag {
@@ -836,6 +865,64 @@ a:hover {
   background: rgba(139, 92, 246, 0.1);
   padding: 4px 10px;
   border-radius: var(--radius-sm);
+  border: 1px solid rgba(139, 92, 246, 0.2);
+}
+
+/* Project Actions */
+.project-actions {
+  display: flex;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-top: 1px solid var(--glass-border);
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.project-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.project-btn.demo {
+  background: linear-gradient(135deg, #06b6d4, #0891b2);
+  color: white;
+}
+
+.project-btn.demo:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(6, 182, 212, 0.4);
+}
+
+.project-btn.github {
+  background: rgba(139, 92, 246, 0.1);
+  color: var(--color-accent-purple);
+  border: 1px solid var(--color-accent-purple);
+}
+
+.project-btn.github:hover {
+  background: var(--color-accent-purple);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.project-btn.private {
+  background: rgba(100, 100, 100, 0.2);
+  color: var(--color-text-muted);
+  border: 1px solid rgba(100, 100, 100, 0.3);
+  cursor: not-allowed;
+}
+
+.project-btn svg {
+  width: 16px;
+  height: 16px;
 }
 
 /* ===================================
@@ -1358,12 +1445,25 @@ a:hover {
     gap: var(--spacing-md);
   }
 
-  .project-card {
+  .project-preview {
+    height: 150px;
+  }
+
+  .project-content {
     padding: var(--spacing-md);
   }
 
   .project-title {
     font-size: var(--font-size-lg);
+  }
+
+  .project-actions {
+    padding: var(--spacing-sm) var(--spacing-md);
+  }
+
+  .project-btn {
+    padding: var(--spacing-xs) var(--spacing-sm);
+    font-size: var(--font-size-xs);
   }
 
   /* Contact Section */
