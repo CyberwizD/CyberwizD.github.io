@@ -1224,6 +1224,10 @@ a:hover {
     justify-content: center;
   }
 
+  .hero-greeting {
+    justify-content: center;
+  }
+
   /* Resize scroll navigation elements on mobile */
   .scroll-indicator {
     right: 12px;
