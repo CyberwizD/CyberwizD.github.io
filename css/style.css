@@ -969,6 +969,115 @@ a:hover {
 }
 
 /* ===================================
+   CERTIFICATES SECTION
+   =================================== */
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-xl);
+}
+
+.certificate-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: all var(--transition-base);
+  display: flex;
+  flex-direction: column;
+}
+
+.certificate-card:hover {
+  border-color: var(--color-accent-cyan);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(6, 182, 212, 0.3);
+}
+
+.certificate-preview {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  background: var(--color-bg-tertiary);
+}
+
+.certificate-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  transition: transform var(--transition-slow);
+}
+
+.certificate-card:hover .certificate-preview img {
+  transform: scale(1.05);
+}
+
+.certificate-content {
+  padding: var(--spacing-lg);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.certificate-title {
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--spacing-xs);
+  color: var(--color-text-primary);
+}
+
+.certificate-issuer {
+  font-size: var(--font-size-sm);
+  color: var(--color-accent-cyan);
+  margin-bottom: var(--spacing-sm);
+  font-weight: 500;
+}
+
+.certificate-date {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+  margin-bottom: var(--spacing-md);
+}
+
+.certificate-actions {
+  display: flex;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-top: 1px solid var(--glass-border);
+  background: rgba(0, 0, 0, 0.2);
+  margin-top: auto;
+}
+
+.certificate-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all var(--transition-fast);
+  background: linear-gradient(135deg, #06b6d4, #0891b2);
+  color: white;
+}
+
+.certificate-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(6, 182, 212, 0.4);
+  color: white;
+}
+
+.certificate-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* ===================================
    CONTACT SECTION
    =================================== */
 .contact-content {
@@ -1528,6 +1637,33 @@ a:hover {
   }
 
   .project-btn {
+    padding: var(--spacing-xs) var(--spacing-sm);
+    font-size: var(--font-size-xs);
+  }
+
+  /* Certificates Section */
+  .certificates-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .certificate-preview {
+    height: 150px;
+  }
+
+  .certificate-content {
+    padding: var(--spacing-md);
+  }
+
+  .certificate-title {
+    font-size: var(--font-size-base);
+  }
+
+  .certificate-actions {
+    padding: var(--spacing-sm) var(--spacing-md);
+  }
+
+  .certificate-btn {
     padding: var(--spacing-xs) var(--spacing-sm);
     font-size: var(--font-size-xs);
   }
