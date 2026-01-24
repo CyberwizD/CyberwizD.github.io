@@ -1469,11 +1469,18 @@ a:hover {
   }
 
   .hero-meta {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: var(--spacing-sm);
     align-items: center;
+    justify-content: center;
     margin-bottom: var(--spacing-md);
     display: flex;
+  }
+
+  .hero-meta .meta-item:nth-child(3) {
+    flex-basis: 100%;
+    justify-content: center;
   }
 
   .hero-cta {
