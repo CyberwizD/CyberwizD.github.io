@@ -69,7 +69,7 @@ function createScrollIndicators() {
     const indicator = document.createElement('div');
     indicator.className = 'scroll-indicator';
 
-    const sectionNames = ['Home', 'About', 'Skills', 'Experience', 'Projects', 'Contact'];
+    const sectionNames = ['Home', 'About', 'Skills', 'Experience', 'Projects', 'Certificates', 'Contact'];
 
     sections.forEach((section, index) => {
         const dot = document.createElement('div');
@@ -91,7 +91,7 @@ function createScrollIndicators() {
 function createSectionCounter() {
     const counter = document.createElement('div');
     counter.className = 'section-counter';
-    counter.innerHTML = '<span class="current">01</span> / <span class="total">06</span>';
+    counter.innerHTML = '<span class="current">01</span> / <span class="total">07</span>';
     document.body.appendChild(counter);
 }
 
