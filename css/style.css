@@ -1856,14 +1856,15 @@ a:hover {
    HORIZONTAL SCROLL NAVIGATION
    =================================== */
 .scroll-indicator {
-  position: fixed;
+  display: none;
+  /* position: fixed;
   right: 30px;
   top: 50%;
   transform: translateY(-50%);
   z-index: var(--z-fixed);
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-sm);
+  gap: var(--spacing-sm); */
 }
 
 .scroll-dot {
